@@ -4,7 +4,7 @@ A backend system built with **Node.js**, **Express**, and **PostgreSQL** to supp
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Frontend**: Vite + React + Tailwind CSS (optional)
 - **Backend**: Node.js + Express
@@ -14,7 +14,7 @@ A backend system built with **Node.js**, **Express**, and **PostgreSQL** to supp
 
 ---
 
-## 📦 Features
+## Features
 
 - Manage **calls**, **bookings**, **modification requests**, **customers**, **notes**
 - Track call statuses and agent assignments
@@ -24,7 +24,7 @@ A backend system built with **Node.js**, **Express**, and **PostgreSQL** to supp
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 ### 1. Clone the repo
 ```bash
