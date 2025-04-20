@@ -53,3 +53,66 @@ Or nodemon
 nodemon server.js
 ```
 server runs at 5000
+
+# Trip Booking Call Center API
+
+A Node.js + Express backend API for managing agents, customers, calls, bookings, and notes in a call support system. PostgreSQL is used as the primary database. The service is Dockerized and deployable on platforms like Render.
+
+## 🌐 Live API
+
+**Base URL:**  
+[https://call-support-agent.onrender.com](https://call-support-agent.onrender.com)
+
+---
+
+## 📦 API Endpoints
+
+All endpoints are prefixed with `/api`.
+
+### 👩‍💼 Agents
+
+| Method | Endpoint                 | Description                           |
+|--------|--------------------------|---------------------------------------|
+| GET    | `/api/agents`            | Get all agents                        |
+| GET    | `/api/agents/:id`        | Get agent by ID                       |
+| PATCH  | `/api/agents/:id/status` | Update agent status                   |
+| GET    | `/api/agents/:id/stats`  | Get agent call stats (by period)      |
+
+**Query Parameters (for stats):**
+- `period=day|week|month`
+
+### 👥 Customers
+
+| Method | Endpoint              | Description         |
+|--------|-----------------------|---------------------|
+| GET    | `/api/customers`      | Get all customers   |
+| GET    | `/api/customers/:id`  | Get customer by ID  |
+
+### 📞 Calls
+
+| Method | Endpoint           | Description            |
+|--------|--------------------|------------------------|
+| GET    | `/api/calls`       | Get all calls          |
+| GET    | `/api/calls/:id`   | Get call by ID         |
+| POST   | `/api/calls`       | Create a new call      |
+
+### 📚 Bookings
+
+| Method | Endpoint               | Description                |
+|--------|------------------------|----------------------------|
+| GET    | `/api/bookings`        | Get all bookings           |
+| GET    | `/api/bookings/:id`    | Get booking by ID          |
+| POST   | `/api/bookings`        | Create a new booking       |
+| PATCH  | `/api/bookings/:id`    | Modify a booking (e.g., status or info) |
+
+### 📝 Notes
+
+| Method | Endpoint             | Description         |
+|--------|----------------------|---------------------|
+| GET    | `/api/notes/customer/:id`         | Get all notes       |
+| POST   | `/api/notes`         | Add a note          |
+
+---
+
+
+
